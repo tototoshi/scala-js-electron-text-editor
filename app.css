@@ -1,0 +1,132 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app .editor-wrapper {
+  overflow-y: scroll;
+  height: 96vh;
+}
+
+.app .status-bar {
+  margin-top: auto;
+  height: 4vh;
+  font-family: monaco, monospace;
+  font-size: 12px;
+  vertical-align: middle;
+  border-top: solid 1px #eeeeee;
+}
+
+.app .status-bar input {
+  -webkit-appearance: none;
+  border: none;
+  padding-left: 3px;
+  width: 100%;
+  height: 100%;
+}
+
+.app .status-bar input:focus {
+  user-select: none;
+  border: none;
+  outline: 0;
+}
+
+.editor-wrapper {
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.editor {
+  font-family: monaco, monospace;
+  font-size: 12px;
+  white-space: pre-wrap;
+}
+
+.editor:focus {
+  border: none;
+  outline: 0;
+}
+
+.line-number {
+  width: 33px;
+  height: 18px;
+  margin-right: 10px;
+  color: #aaa;
+}
+
+.line-number-text {
+  height: 18px;
+  font-size: 12px;
+  text-align: right;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.line-number-text::after {
+  content: ":";
+}
+
+.line-number-text span {
+  vertical-align: middle;
+}
+
+.editor-content {
+  width: 10000px;
+}
+
+div.line {
+  padding: 0;
+  margin: 0;
+  user-select: none; /* supported by Chrome and Opera */
+  height: 18px;
+}
+
+.line.cursor {
+  height: 18px;
+  background-color: #f0f8ff;
+}
+
+.line-content {
+  height: 18px;
+}
+
+.line-content span {
+  height: 18px;
+}
+
+.line .comment {
+  color: #aaaaaa;
+}
+
+.line .keyword {
+  color: #8959a8;
+}
+
+.line .selection {
+  background-color: #ffffcc;
+}
+
+.line .quote {
+  color: #718c00;
+}
+
+.cursor {
+}
+
+.cursor:focus {
+  outline: 0;
+}
