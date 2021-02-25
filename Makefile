@@ -1,6 +1,6 @@
 .PHONY: build start
 build:
-	sbtn fastOptJS
+	./sbtn fastOptJS
 	npx webpack
 start: build
 	npx electron .

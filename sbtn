@@ -1,0 +1,12 @@
+#!/bin/bash
+
+which sbtn > /dev/null 2>&1
+ret=$?
+
+command=sbt
+
+if [ $ret -eq 0 ]; then
+   command=sbtn
+fi
+
+$command "$@"
