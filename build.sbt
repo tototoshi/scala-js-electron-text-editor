@@ -1,4 +1,4 @@
-val scalaVersion_2_13 = "2.13.1"
+val scalaVersion_2_13 = "2.13.5"
 
 lazy val commonSettings = Seq(
   organization := "com.github.tototoshi",
