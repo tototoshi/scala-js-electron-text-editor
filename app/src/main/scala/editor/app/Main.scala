@@ -23,7 +23,8 @@ object Main {
   private def createWindow(): Unit = {
     val option = js.Dynamic.literal(
       "webPreferences" -> js.Dynamic.literal(
-        "nodeIntegration" -> true
+        "nodeIntegration" -> true,
+        "contextIsolation" -> false
       )
     )
     val window = new Electron.BrowserWindow(option)
