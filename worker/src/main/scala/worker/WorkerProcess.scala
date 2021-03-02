@@ -1,3 +1,4 @@
+
 package worker
 
 import editor.core.model.{Selection, View}
@@ -39,7 +40,7 @@ class WorkerProcess {
       )
 
       scalajs.js.Dynamic.global.postMessage(payload)
-      val end = Date.now
+      val end = Date.now()
 
       println(s"worker process: end ${end - start}ms")
 
