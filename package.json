@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "electron": "^13.0.1",
-    "http-server": "^0.12.3",
+    "http-server": "^13.0.0",
     "source-map-support": "^0.5.19",
     "webpack": "^5.24.2",
     "webpack-cli": "^4.5.0"
