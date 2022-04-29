@@ -16,7 +16,7 @@ lazy val core = project
     name := "core",
     libraryDependencies ++= Seq(
       "org.scala-js" %%% "scalajs-dom" % "2.1.0",
-      "org.scalatest" %%% "scalatest" % "3.2.11" % Test
+      "org.scalatest" %%% "scalatest" % "3.2.12" % Test
     )
   )
   .dependsOn(electron)
