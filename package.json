@@ -8,7 +8,7 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "electron": "^19.0.1",
+    "electron": "^20.0.2",
     "http-server": "^14.0.0",
     "source-map-support": "^0.5.19",
     "webpack": "^5.24.2",
