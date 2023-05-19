@@ -15,7 +15,7 @@ lazy val core = project
     commonSettings,
     name := "core",
     libraryDependencies ++= Seq(
-      "org.scala-js" %%% "scalajs-dom" % "2.2.0",
+      "org.scala-js" %%% "scalajs-dom" % "2.6.0",
       "org.scalatest" %%% "scalatest" % "3.2.13" % Test
     )
   )
@@ -38,7 +38,7 @@ lazy val react = project
     commonSettings,
     name := "react",
     libraryDependencies ++= Seq(
-      "org.scala-js" %%% "scalajs-dom" % "2.2.0"
+      "org.scala-js" %%% "scalajs-dom" % "2.6.0"
     )
   )
 
